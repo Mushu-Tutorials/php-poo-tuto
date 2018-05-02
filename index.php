@@ -6,5 +6,5 @@ $merlin = new Personnage();
 var_dump($merlin);
 
 
-$Harry = new Personnage();
+$harry = new Personnage();
 var_dump($harry);
