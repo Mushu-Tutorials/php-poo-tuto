@@ -1,6 +1,6 @@
 <?php
 
-require 'Personnage.php'
+require 'Personnage.php';
 
 $merlin = new Personnage();
 var_dump($merlin);
