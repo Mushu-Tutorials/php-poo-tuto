@@ -27,7 +27,6 @@ class Personnage {
 
   public function crier() {
     echo 'LEROY JENKINS';
-    echo '<br><br>';
   }
 
   public function regenerer() {
