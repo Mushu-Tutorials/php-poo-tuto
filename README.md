@@ -1,7 +1,7 @@
 # php-poo-tuto
 Learn POO with PHP
 
-## L'arborescence
+# L'arborescence
 
 ```
 |\index.php
@@ -13,13 +13,12 @@ Learn POO with PHP
 |   |\classe3.php
 ```
 
-## Mon Objet
+# Mon Objet
 
 Syntaxe de mon objet. On y retrouve les variables, les fonctions et leur visibilité (public, private, protected)
 
 ```php
 class Personnage {
-
   // Propriétés de la classe
   public $vie = 80;
   public $atk = 20;
@@ -33,13 +32,30 @@ class Personnage {
     echo 'LEROY JENKINS';
   }
 
-  public function regenerer() {
-    $this -> vie = 100;
+  public function regenerer($life = null) {
+    if(is_null($life)) {
+      $this -> vie = 100;      
+    } else {
+      $this -> vie += $life;
+    }
+  }
+
+  public function mort() {
+    if($this -> vie < 1) {
+      $this -> vie = 0;
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public function attaque($cible) {
+    $cible -> vie -= $this -> atk;
   }
 }
 ```
 
-### Le constructor : __construct()
+## Le constructor : __construct()
 
 C'est une fonction qui permet de définir les paramètres de l'objet. Ici le nom du personnage.
 
@@ -49,11 +65,11 @@ C'est une fonction qui permet de définir les paramètres de l'objet. Ici le nom
   }
 ```
 
-### Les fonctions
+## Les fonctions
 
 Les fonctions définissent les actions qui pourront être faites lors de l'instanciation de mon objet.
 
-#### Régénérer mon personnage
+### Régénérer mon personnage
 
 Ici, si on ne met pas de paramètre lors de l'appel de la fonction, on régénère entièrement la vie du personnage. En revanche lorsqu'on précise une quantité, on régénère le personnage à hauteur de cette dernière.
 
@@ -68,7 +84,7 @@ Ici, si on ne met pas de paramètre lors de l'appel de la fonction, on régénè
 }
 ```
 
-#### Vérifier si mon personnage est mort
+### Vérifier si mon personnage est mort
 
 Ici, on renvoie _true_ si le personnage est __mort__ et _false_ s'il est en vie.
 
@@ -83,7 +99,7 @@ public function mort() {
 }
 ```
 
-#### Attaquer un autre personnage
+### Attaquer un autre personnage
 
 On attaque un autre personnage. L'attaquant (`$this`) retire en fonction de son __atk__ de la __vie__ au défenseur (`$cible`).
 
@@ -93,18 +109,18 @@ public function attaque($cible) {
 }
 ```
 
-## Mon Main
+# Mon Main
 
 Fichier où sont créés les objets et où sont appelés les différentes méthodes
 
-### Initialisation d'un nouvel objet
+## Initialisation d'un nouvel objet
 
 ```php
 $merlin = new Personnage('Merlinn');
 $harry = new Personnage('Harryy');
 ```
 
-### Appel des paramètres de l'objet et interactions
+## Appel des paramètres de l'objet et interactions
 
 ```php
 $merlin -> vie = 80;
@@ -114,7 +130,7 @@ $harry -> vie = 95;
 $harry -> nom = 'Harry';
 ```
 
-### Appel des méthodes
+## Appel des méthodes
 
 ```php
 $merlin -> crier();
@@ -122,5 +138,7 @@ $merlin -> regenerer(5);
 
 $harry -> regenerer();
 $harry -> mort();
+
+$merlin -> attaque($harry);
 ```
 
