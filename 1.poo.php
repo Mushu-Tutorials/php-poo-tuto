@@ -1,5 +1,8 @@
 <?php
 
+echo '<br>------------------------------------------------------------<br>';
+echo '<br>I. Les bases de la POO<br>';
+
 require 'Personnage.php';
 
 echo '1. Initialisation d\'un nouveau personnage et<br>';
