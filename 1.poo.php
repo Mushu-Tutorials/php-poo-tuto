@@ -1,5 +1,6 @@
 <?php
 require 'Personnage.php';
+echo '<h1>CHAPITRE I : La POO</h1><br>';
 
 echo '1. Initialisation d\'un nouveau personnage et<br>';
 echo 'appel du CONSTRUCTEUR via la définition du nom Merlin :<br>';

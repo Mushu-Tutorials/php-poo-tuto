@@ -13,7 +13,7 @@ Learn POO with PHP
 |   |\classe3.php
 ```
 
-# Mon Objet
+# L'Objet
 
 Syntaxe de mon objet. On y retrouve les variables, les fonctions et leur visibilité (public, private, protected)
 
@@ -109,7 +109,7 @@ public function attaque($cible) {
 }
 ```
 
-# Mon Main
+# Le Main
 
 Fichier où sont créés les objets et où sont appelés les différentes méthodes
 
