@@ -109,6 +109,16 @@ public function attaque($cible) {
 }
 ```
 
+## La visibilité Public / Private
+
+```php
+class Personnage {
+  public $vie = 80;
+  public $atk = 20;
+  public $nom;
+}
+```
+
 # Le Main
 
 Fichier où sont créés les objets et où sont appelés les différentes méthodes
