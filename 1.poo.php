@@ -1,8 +1,13 @@
 <?php
 
-// require 'Personnage.php';
+$link_index = 'index.html';
+echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil</a>";
+echo " | ";
+$link_chapiter2 = '2.visibility.php';
+echo "<a href='" . $link_chapiter2 . "'>Chapitre II >><br></a>";
 
-echo '<br>------------------------------------------------------------<br>';
+require 'Personnage.php';
+
 echo '<h1>CHAPITRE I : La POO</h1><br>';
 
 echo '1. Initialisation d\'un nouveau personnage et<br>';
@@ -56,7 +61,13 @@ while($harry -> vie != 0) {
     $merlin -> attaque($harry);
 }
 if($harry -> mort()) {
-    echo 'Harry est mort';
+    echo 'Harry est mort<br>';
 } else {
     echo 'Harry a survécu avec ' . $harry -> vie . ' de vie.<br>';
 }
+
+$link_index = 'index.html';
+echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil</a>";
+echo " | ";
+$link_chapiter2 = '2.visibility.php';
+echo "<a href='" . $link_chapiter2 . "'>Chapitre II >><br></a>";
