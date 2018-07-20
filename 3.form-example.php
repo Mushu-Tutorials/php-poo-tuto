@@ -30,3 +30,11 @@ echo $form -> submit();
 echo '<br>Nouveau formulaire qui renvoi ce qui a été rempli<br>';
 $form = new Form($_POST);
 ?>
+
+<form action="#" method=post>
+    <?php 
+        echo $form -> input('username');
+        echo $form -> input('password');
+        echo $form -> submit();
+    ?> 
+</form>
