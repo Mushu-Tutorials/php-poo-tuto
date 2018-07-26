@@ -1,25 +1,46 @@
 <?php
 
 $link_index = 'index.html';
-echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil</a>";
+echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil<br></a>";
+$link_chapiter1 = '1.poo.php';
+echo "<a href='" . $link_chapiter1 . "'><br><< Chapitre I</a>";
 echo " | ";
-$link_chapiter2 = '2.visibility.php';
-echo "<a href='" . $link_chapiter2 . "'>Chapitre II >><br></a>";
+$link_chapiter3 = '2.visibility.php';
+echo "<a href='" . $link_chapiter3 . "'>Chapitre III >><br></a>";
 
 require 'Personnage.php';
 
-echo '<h1>CHAPITRE II : La visibilité public / private</h1><br>';
+echo '<h1>CHAPITRE II : La visibilité Public / Private / Protected</h1><br>';
 
-echo '1. Création des personnages';
+
+echo '1. Création des personnages<br>';
 $merlin = new Personnage('Merlin');
 $harry = new Personnage('Harry');
 var_dump($merlin, $harry);
 
 
+echo "<br>2. Test d'appel de la variable privée (retirer le commentaire du code pour voir l'erreur)<br>";
+// Enlever le commentaire pour voir l'erreur
+echo "echo \$merlin -> nom<br>";
+// echo $merlin -> nom;
+echo '<br>';
+
+echo '3. Appel du nom de la fonction via la fonction GET<br>';
+var_dump( $merlin -> getSurnom());
 
 
-$link_index = 'index.html';
-echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil</a>";
+echo '4. La portée de "protected"<br>';
+echo "Elle fonctionne comme \"private\" mais aura une portée au niveau des classes qui héritent de celle courante.<br>";
+echo '<br>';
+
+echo '5. <br>';
+
+
+
+
+
+
+echo "<a href='" . $link_index . "'><br><br><< Accéder à l'accueil<br></a>";
+echo "<a href='" . $link_chapiter1 . "'><br><< Chapitre I</a>";
 echo " | ";
-$link_chapiter2 = '2.visibility.php';
-echo "<a href='" . $link_chapiter2 . "'>Chapitre II >><br></a>";
+echo "<a href='" . $link_chapiter3 . "'>Chapitre III >><br></a>";

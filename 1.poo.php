@@ -66,8 +66,6 @@ if($harry -> mort()) {
     echo 'Harry a survécu avec ' . $harry -> vie . ' de vie.<br>';
 }
 
-$link_index = 'index.html';
 echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil</a>";
 echo " | ";
-$link_chapiter2 = '2.visibility.php';
 echo "<a href='" . $link_chapiter2 . "'>Chapitre II >><br></a>";
