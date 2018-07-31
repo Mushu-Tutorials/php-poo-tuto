@@ -184,3 +184,53 @@ $harry -> mort();
 
 $merlin -> attaque($harry);
 ```
+
+# Exemples
+
+## Mise en place d'un formulaire
+
+### Object
+```php
+```
+
+### Main
+```php
+$form = new Form($_POST);
+?>
+```
+
+```html
+<form action="#" method=post>
+    <?php 
+        echo $form -> input('username');
+        echo $form -> input('password');
+        echo $form -> submit();
+    ?> 
+</form>
+```
+
+
+```php
+$form = new Form($_POST);
+?>
+
+<form action="#" method=post>
+    <?php 
+        echo $form -> input('username');
+        echo $form -> input('password');
+        echo $form -> submit();
+    ?> 
+</form>
+```
+
+```html
+$form = new Form($_POST);
+?>
+<form action="#" method=post>
+    <?php 
+        echo $form -> input('username');
+        echo $form -> input('password');
+        echo $form -> submit();
+    ?> 
+</form>
+```
