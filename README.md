@@ -3,8 +3,8 @@ Learn POO with PHP
 
 # Sommaire
 
-- [Arborescence](#larborescence "Arborescence")
-- [Objet](#objet "Objet")
+- [Arborescence](https://github.com/MushuLeDragon/php-poo-tuto#larborescence "Arborescence")
+- [Objet](https://github.com/MushuLeDragon/php-poo-tuto#objet "Objet")
 - []()
 - []()
 - []()
