@@ -3,12 +3,15 @@ Learn POO with PHP
 
 # Sommaire
 
-- [Arborescence](https://github.com/MushuLeDragon/php-poo-tuto#larborescence "Arborescence")
+- [Arborescence](https://github.com/MushuLeDragon/php-poo-tuto#arborescence "Arborescence")
 - [Objet](https://github.com/MushuLeDragon/php-poo-tuto#objet "Objet")
-- []()
-- []()
-- []()
-- []()
+  - [Le constructor : __construct()](https://github.com/MushuLeDragon/php-poo-tuto#le-constructor--__construct "Le constructor : __construct()")
+  - [Les fonctions](https://github.com/MushuLeDragon/php-poo-tuto#les-fonctions "Les fonctions")
+  - [La visibilité Public / Private / Protected](https://github.com/MushuLeDragon/php-poo-tuto#la-visibilité-public--private--protected "La visibilité Public / Private / Protected")
+- [Le Main](https://github.com/MushuLeDragon/php-poo-tuto#le-main "Le Main")
+  - [Initialisation d'un nouvel objet](https://github.com/MushuLeDragon/php-poo-tuto#initialisation-dun-nouvel-objet "Initialisation d'un nouvel objet")
+  - [Appel des paramètres de l'objet et interactions](https://github.com/MushuLeDragon/php-poo-tuto#appel-des-paramètres-de-lobjet-et-interactions "Appel des paramètres de l'objet et interactions")
+  - [Appel des méthodes](https://github.com/MushuLeDragon/php-poo-tuto#appel-des-méthodes "Appel des méthodes")
 
 # Arborescence
 
@@ -181,4 +184,3 @@ $harry -> mort();
 
 $merlin -> attaque($harry);
 ```
-
