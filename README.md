@@ -1,7 +1,16 @@
 # php-poo-tuto
 Learn POO with PHP
 
-# L'arborescence
+# Sommaire
+
+- [Arborescence](#larborescence "Arborescence")
+- [Objet](#objet "Objet")
+- []()
+- []()
+- []()
+- []()
+
+# Arborescence
 
 ```
 |\index.php
@@ -13,7 +22,7 @@ Learn POO with PHP
 |   |\classe3.php
 ```
 
-# L'Objet
+# Objet
 
 Syntaxe de mon objet. On y retrouve les variables, les fonctions et leur visibilité (public, private, protected)
 
