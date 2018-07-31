@@ -5,7 +5,7 @@ echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil<br></a>";
 $link_chapiter1 = '1.poo.php';
 echo "<a href='" . $link_chapiter1 . "'><br><< Chapitre I</a>";
 echo " | ";
-$link_chapiter3 = '2.visibility.php';
+$link_chapiter3 = '3.form-example.php';
 echo "<a href='" . $link_chapiter3 . "'>Chapitre III >><br></a>";
 
 require 'Personnage.php';
