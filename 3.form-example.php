@@ -2,7 +2,7 @@
 
 $link_index = 'index.html';
 echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil<br></a>";
-$link_chapiter2 = '1.poo.php';
+$link_chapiter2 = '2.visibility.php';
 echo "<a href='" . $link_chapiter2 . "'><br><< Chapitre II</a>";
 echo " | ";
 $link_chapiter4 = '3.form-example.php';

@@ -75,9 +75,9 @@ class Personnage {
 C'est une fonction qui permet de définir les paramètres de l'objet. Ici le nom du personnage.
 
 ```php
-  public function __construct($name) {
-    $this -> nom = $name;
-  }
+public function __construct($name) {
+  $this -> nom = $name;
+}
 ```
 
 ## Les fonctions
@@ -89,12 +89,11 @@ Les fonctions définissent les actions qui pourront être faites lors de l'insta
 Ici, si on ne met pas de paramètre lors de l'appel de la fonction, on régénère entièrement la vie du personnage. En revanche lorsqu'on précise une quantité, on régénère le personnage à hauteur de cette dernière.
 
 ```php
-  public function regenerer($life = null) {
-    if(is_null($life)) {
-      $this -> vie = 100;      
-    } else {
-      $this -> vie += $life;
-    }
+public function regenerer($life = null) {
+  if(is_null($life)) {
+    $this -> vie = 100;      
+  } else {
+    $this -> vie += $life;
   }
 }
 ```
@@ -190,42 +189,44 @@ $merlin -> attaque($harry);
 ## Mise en place d'un formulaire
 
 ### Object
+
+Créer une page `Form.php`. On y retrouve le code ci-dessous :
 ```php
+class Form {
+  private $data;
+  public $surround = 'p';
+
+  public function __construct($donnees = array()) {
+    $this -> data = $donnees;
+  }
+
+  private function surround($html) {
+    return "<{$this -> surround}>{$html}</{$this -> surround}>";
+  }
+
+  private function getValue($index) {
+    return isset($this -> data[$index]) ? $this -> data[$index] : null;
+  }
+
+  public function input($name) {
+    return $this -> surround(
+      '<input type="text" name="' . $name . '" value="' . $this -> getValue($name) . '">'
+    );
+  }
+
+  public function submit() {
+    return $this -> surround('<button type="submit">Envoyer</button>');
+  }
+}
 ```
 
 ### Main
-```php
-$form = new Form($_POST);
-?>
-```
-
-```html
-<form action="#" method=post>
-    <?php 
-        echo $form -> input('username');
-        echo $form -> input('password');
-        echo $form -> submit();
-    ?> 
-</form>
-```
-
 
 ```php
+<?php
 $form = new Form($_POST);
 ?>
 
-<form action="#" method=post>
-    <?php 
-        echo $form -> input('username');
-        echo $form -> input('password');
-        echo $form -> submit();
-    ?> 
-</form>
-```
-
-```html
-$form = new Form($_POST);
-?>
 <form action="#" method=post>
     <?php 
         echo $form -> input('username');
