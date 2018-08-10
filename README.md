@@ -138,6 +138,14 @@ class Personnage {
     return $this -> surnom;
   }
 
+  // La fonction n'est accessible que dans cette dernière. On ne pourra pas l'appeler.
+  private function vie_negative() {
+  if ($this -> vie < 0) {
+    $this -> vie = 0;
+  }
+}
+
+
   
 }
 ```
