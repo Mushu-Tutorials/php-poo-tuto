@@ -20,9 +20,9 @@ var_dump($merlin, $harry);
 
 
 echo "<br>2. Test d'appel de la variable privée (retirer le commentaire du code pour voir l'erreur)<br>";
+echo "echo \$merlin -> surnom<br>";
 // Enlever le commentaire pour voir l'erreur
-echo "echo \$merlin -> nom<br>";
-// echo $merlin -> nom;
+echo $merlin -> surnom . "<br>";
 echo '<br>';
 
 echo '3. Appel du nom de la fonction via la fonction GET<br>';
