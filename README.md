@@ -127,8 +127,10 @@ public function attaque($cible) {
 
 Une variable __privée__ ne sera pas visible en dehors de la classe. Il en est de meme pour une variable __protected__ (ici la visibilité s'étend aux classe qui hérite de celle courante).  
 Pour récupérer les variables __private__ il faut utiliser les __fonctions get__. Pour les modifier il faut utiliser les __fonctions set__.
+
 ```php
 class Personnage {
+
   public $vie = 80;
   public $atk = 20;
   public $nom;
@@ -138,12 +140,13 @@ class Personnage {
     return $this -> surnom;
   }
 
-  // La fonction n'est accessible que dans cette dernière. On ne pourra pas l'appeler.
+  // La fonction n'est accessible que dans la classe Personnage. On ne pourra pas l'appeler en dehors.
   private function vie_negative() {
     if ($this -> vie < 0) {
       $this -> vie = 0;
     }
   }
+
 }
 ```
  

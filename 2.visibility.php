@@ -21,12 +21,16 @@ var_dump($merlin, $harry);
 
 echo "<br>2. Test d'appel de la variable privée (retirer le commentaire du code pour voir l'erreur)<br>";
 echo "echo \$merlin -> surnom<br>";
+$image = "./img/error-visibility.png";
+print '<p>Exemple de l\'erreur en image :</p><img src="' . $image . '"><br>';
 // Enlever le commentaire pour voir l'erreur
-echo $merlin -> surnom . "<br>";
+// echo $merlin -> surnom . "<br>";
+
 echo '<br>';
 
 echo '3. Appel du nom de la fonction via la fonction GET<br>';
-var_dump( $merlin -> getSurnom());
+echo "\$merlin -> getSurnom())";
+var_dump($merlin -> getSurnom());
 
 
 echo '4. La portée de "protected"<br>';
