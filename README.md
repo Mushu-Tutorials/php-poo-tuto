@@ -146,7 +146,7 @@ class Personnage {
   }
 }
 ```
-
+ 
 Erreur lors de l'appel d'une fonction privée :
 ![Erreur de visibilité](./img/eror_visibility.png "Erreur de visibilité")
 
