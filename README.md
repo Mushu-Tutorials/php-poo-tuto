@@ -148,7 +148,7 @@ class Personnage {
 ```
  
 Erreur lors de l'appel d'une fonction privée :
-![Erreur de visibilité](./img/error_visibility.png "Erreur de visibilité")
+![Erreur de visibilité](./img/error-visibility.png "Erreur de visibilité")
 
 
 On peut rentre privé les fonctions comme ci dessous. Cela permet de montrer que cette fonction n'est utilisée que dans la classe Personnage et qu'il n'y a pas d'intérêt à la modifier. Elle sera juste appelée dans la fonction concernée (ici `attaque()`).
