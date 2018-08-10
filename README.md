@@ -140,18 +140,16 @@ class Personnage {
 
   // La fonction n'est accessible que dans cette dernière. On ne pourra pas l'appeler.
   private function vie_negative() {
-  if ($this -> vie < 0) {
-    $this -> vie = 0;
+    if ($this -> vie < 0) {
+      $this -> vie = 0;
+    }
   }
 }
+```
 
 Erreur lors de l'appel d'une fonction privée :
 ![Erreur de visibilité](./img/eror_visibility.png "Erreur de visibilité")
 
-
-  
-}
-```
 
 On peut rentre privé les fonctions comme ci dessous. Cela permet de montrer que cette fonction n'est utilisée que dans la classe Personnage et qu'il n'y a pas d'intérêt à la modifier. Elle sera juste appelée dans la fonction concernée (ici `attaque()`).
 ```php
