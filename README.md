@@ -134,13 +134,24 @@ class Personnage {
   public $vie = 80;
   public $atk = 20;
   public $nom;
+  // Variable privée $surnom
   private $surnom;
 
+  // Fonction GET et SET pour récupérer et modifier la variable
   public function getSurnom() {
     return $this -> surnom;
   }
 
-  // La fonction n'est accessible que dans la classe Personnage. On ne pourra pas l'appeler en dehors.
+  public function setSurnom($name) {
+    $this -> surnom = $name;
+  }
+
+  public function attaque($cible) {
+    $cible -> vie -= $this -> atk;
+    $cible -> vie_negative();
+  }
+
+  // La fonction vie_negative() n'est accessible que dans la classe Personnage. On ne pourra pas l'appeler en dehors.
   private function vie_negative() {
     if ($this -> vie < 0) {
       $this -> vie = 0;
@@ -148,6 +159,15 @@ class Personnage {
   }
 
 }
+```
+
+Appel de la fonction privée via le get
+```php
+// Récupère la variable privée via la fonction GET
+var_dump($merlin -> getSurnom());
+
+// Modifie la variable privée via la fonction SET
+$merlin -> setSurnom("Marlin l'Espadon");
 ```
  
 Erreur lors de l'appel d'une fonction privée :

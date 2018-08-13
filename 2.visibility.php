@@ -25,19 +25,22 @@ $image = "./img/error-visibility.png";
 print '<p>Exemple de l\'erreur en image :</p><img src="' . $image . '"><br>';
 // Enlever le commentaire pour voir l'erreur
 // echo $merlin -> surnom . "<br>";
-
 echo '<br>';
 
-echo '3. Appel du nom de la fonction via la fonction GET<br>';
-echo "\$merlin -> getSurnom())";
+echo '3. Appel de la variable via la fonction GET<br>';
+echo "\$merlin -> getSurnom()";
 var_dump($merlin -> getSurnom());
 
+echo '4. Modification de la variable via la fonction SET<br>';
+echo "\$merlin -> setSurnom('Marlin l'Espadon')";
+$merlin -> setSurnom("Marlin l'Espadon");
+var_dump($merlin -> getSurnom());
 
-echo '4. La portée de "protected"<br>';
+echo '5. La portée de "protected"<br>';
 echo "Elle fonctionne comme \"private\" mais aura une portée au niveau des classes qui héritent de celle courante.<br>";
 echo '<br>';
 
-echo '5. <br>';
+echo '6. <br>';
 
 
 
