@@ -151,7 +151,8 @@ class Personnage {
     $cible -> vie_negative();
   }
 
-  // La fonction vie_negative() n'est accessible que dans la classe Personnage. On ne pourra pas l'appeler en dehors.
+  // La fonction vie_negative() n'est accessible que dans la classe Personnage. 
+  // On ne pourra pas l'appeler en dehors.
   private function vie_negative() {
     if ($this -> vie < 0) {
       $this -> vie = 0;
