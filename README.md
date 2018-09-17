@@ -3,15 +3,16 @@ Learn POO with PHP
 
 # Sommaire
 
-- [Arborescence](https://github.com/MushuLeDragon/php-poo-tuto#arborescence "Arborescence")
-- [Objet](https://github.com/MushuLeDragon/php-poo-tuto#objet "Objet")
-  - [Le constructor : __construct()](https://github.com/MushuLeDragon/php-poo-tuto#le-constructor--__construct "Le constructor : __construct()")
-  - [Les fonctions](https://github.com/MushuLeDragon/php-poo-tuto#les-fonctions "Les fonctions")
-  - [La visibilité Public / Private / Protected](https://github.com/MushuLeDragon/php-poo-tuto#la-visibilité-public--private--protected "La visibilité Public / Private / Protected")
-- [Le Main](https://github.com/MushuLeDragon/php-poo-tuto#le-main "Le Main")
-  - [Initialisation d'un nouvel objet](https://github.com/MushuLeDragon/php-poo-tuto#initialisation-dun-nouvel-objet "Initialisation d'un nouvel objet")
-  - [Appel des paramètres de l'objet et interactions](https://github.com/MushuLeDragon/php-poo-tuto#appel-des-paramètres-de-lobjet-et-interactions "Appel des paramètres de l'objet et interactions")
-  - [Appel des méthodes](https://github.com/MushuLeDragon/php-poo-tuto#appel-des-méthodes "Appel des méthodes")
+- [Arborescence](#arborescence "Arborescence")
+- [La documentation PHP](#la-documentation-php "La documentation PHP")
+- [Objet](#objet "Objet")
+  - [Le constructor : __construct()](#le-constructor--__construct "Le constructor : __construct()")
+  - [Les fonctions](#les-fonctions "Les fonctions")
+  - [La visibilité Public / Private / Protected](#la-visibilité-public--private--protected "La visibilité Public / Private / Protected")
+- [Le Main](#le-main "Le Main")
+  - [Initialisation d'un nouvel objet](#initialisation-dun-nouvel-objet "Initialisation d'un nouvel objet")
+  - [Appel des paramètres de l'objet et interactions](#appel-des-paramètres-de-lobjet-et-interactions "Appel des paramètres de l'objet et interactions")
+  - [Appel des méthodes](#appel-des-méthodes "Appel des méthodes")
 
 # Arborescence
 
@@ -23,6 +24,13 @@ Learn POO with PHP
 |   |\classe1.php
 |   |\classe2.php
 |   |\classe3.php
+```
+
+# La documentation PHP
+
+Il est important de documenter son code. Voici les blocs de documentation à ajouter aux fonction, classes, variables dans le code, ainsi que les différents paramètres et attibuts à y ajouter.
+
+```php
 ```
 
 # Objet
