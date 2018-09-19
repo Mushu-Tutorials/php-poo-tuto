@@ -18,12 +18,12 @@ Learn POO with PHP
 
 ```
 |\index.php
+|
+|\classes
 | |
-|  \classes
-|   |
-|   |\classe1.php
-|   |\classe2.php
-|   |\classe3.php
+| |\classe1.php
+| |\classe2.php
+| |\classe3.php
 ```
 
 # La documentation PHP
