@@ -1,6 +1,16 @@
 <?php
 
+$link_index = 'index.html';
+echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil<br></a>";
+$link_chapiter2 = '2.visibility.php';
+echo "<a href='" . $link_chapiter2 . "'><br><< Chapitre II</a>";
+echo " | ";
+$link_chapiter4 = '4.documentation.php';
+echo "<a href='" . $link_chapiter4 . "'>Chapitre IV >><br></a>";
+
 require 'Form.php';
+
+echo '<h1>CHAPITRE III : Exemple de Formulaire</h1><br>';
 
 $form = new Form(array(
     'username' => 'Roger'
@@ -38,3 +48,11 @@ $form = new Form($_POST);
         echo $form -> submit();
     ?> 
 </form>
+
+
+<?php
+echo "<a href='" . $link_index . "'><br><br><< Accéder à l'accueil<br></a>";
+echo "<a href='" . $link_chapiter2 . "'><br><< Chapitre II</a>";
+echo " | ";
+echo "<a href='" . $link_chapiter4 . "'>Chapitre IV >><br></a>";
+?>

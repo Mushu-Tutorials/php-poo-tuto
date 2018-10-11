@@ -5,7 +5,7 @@ echo "<a href='" . $link_index . "'><br><< Accéder à l'accueil<br></a>";
 $link_chapiter1 = '1.poo.php';
 echo "<a href='" . $link_chapiter1 . "'><br><< Chapitre I</a>";
 echo " | ";
-$link_chapiter3 = '2.visibility.php';
+$link_chapiter3 = '3.form-example.php';
 echo "<a href='" . $link_chapiter3 . "'>Chapitre III >><br></a>";
 
 require 'Personnage.php';
@@ -20,20 +20,27 @@ var_dump($merlin, $harry);
 
 
 echo "<br>2. Test d'appel de la variable privée (retirer le commentaire du code pour voir l'erreur)<br>";
+echo "echo \$merlin -> surnom<br>";
+$image = "./img/error-visibility.png";
+print '<p>Exemple de l\'erreur en image :</p><img src="' . $image . '"><br>';
 // Enlever le commentaire pour voir l'erreur
-echo "echo \$merlin -> nom<br>";
-// echo $merlin -> nom;
+// echo $merlin -> surnom . "<br>";
 echo '<br>';
 
-echo '3. Appel du nom de la fonction via la fonction GET<br>';
-var_dump( $merlin -> getSurnom());
+echo '3. Appel de la variable via la fonction GET<br>';
+echo "\$merlin -> getSurnom()";
+var_dump($merlin -> getSurnom());
 
+echo '4. Modification de la variable via la fonction SET<br>';
+echo "\$merlin -> setSurnom('Marlin l'Espadon')";
+$merlin -> setSurnom("Marlin l'Espadon");
+var_dump($merlin -> getSurnom());
 
-echo '4. La portée de "protected"<br>';
+echo '5. La portée de "protected"<br>';
 echo "Elle fonctionne comme \"private\" mais aura une portée au niveau des classes qui héritent de celle courante.<br>";
 echo '<br>';
 
-echo '5. <br>';
+echo '6. <br>';
 
 
 

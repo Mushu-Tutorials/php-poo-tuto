@@ -36,14 +36,19 @@ class Personnage {
     }
   }
 
+  // Utilisation dans cette fonction de la fonction privée vie_negative()
   public function attaque($cible) {
     $cible -> vie -= $this -> atk;
     $cible -> vie_negative();
   }
 
-  // CHAPITRE I : La POO
+  // CHAPITRE II : La visibilité
   public function getSurnom() {
     return $this -> surnom;
+  }
+
+  public function setSurnom($name) {
+    $this -> surnom = $name;
   }
 
   private function vie_negative() {
@@ -51,10 +56,5 @@ class Personnage {
       $this -> vie = 0;
     }
   }
-
-  public function setSurnom($name) {
-    $this -> surnom = $name;
-  }
-
 
 }
