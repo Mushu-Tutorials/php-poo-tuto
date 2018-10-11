@@ -1,4 +1,4 @@
-# php-poo-tuto
+ .# php-poo-tuto
 Learn POO with PHP
 
 # L'arborescence
